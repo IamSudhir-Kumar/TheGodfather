@@ -13,9 +13,8 @@ body {
   padding: 0;
 }
 section {
-  padding: 0 100px;
+  padding:  10% 0 10% 0 ;
   background-image: url(crew.png);
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,19 +33,22 @@ section {
     text-decoration: none;
     text-align: center;
     justify-content: center;
-    margin-top: 2px;
-    background-image: linear-gradient(to right, #A40606, #d98324);
-    border-radius: 5px;
-    width: 25%;
-    height: 6%;
-   
 }
 
 .btn a{
     color: white;
     text-decoration: none;
-    padding: 1%;
+    font-weight: 700;
 }
 .btn:hover{
-    box-shadow: 20px;
+    
+    border-radius: 2px;
+    background:linear-gradient(to right , #28373B , #485461 );
 }
+
+p {
+  position: relative;
+  max-width: 600px;
+  width: 100%;
+}
+

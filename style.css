@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.banner {
+  min-height: 100vh;
+  background: #f09c23 url(bg.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 40px 100px;
+  display: flex;
+  align-items: center;
+}
+
+header {
+  position: absolute;
+  top: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  max-width: 120px;
+}
+
+.toggle {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background: #ff3333;
+  margin-right: 20px;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toggle::before {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 3px;
+  background: white;
+  transform: translateY(-6px);
+  transition: 0.5s;
+}
+
+.toggle.active::before {
+  transform: translateY(0) rotate(45deg);
+}
+.toggle::after {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 3px;
+  background: black;
+  transform: translateY(6px);
+  transition: 0.5s;
+}
+.toggle.active::after {
+  transform: translateY(0) rotate(-45deg);
+}
+
+.toggle:hover {
+  box-shadow: 0 4px 10px 0 rgb(45 54 65 / 75%);
+  border-radius: 5px;
+}
+
+.navigation {
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #120e0f url(menuBg.jpg);
+  background-position: right;
+  background-color: cover;
+  background-size: cover;
+  display: none;
+}
+
+.navigation.active {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.navigation li {
+  margin: 4px 0;
+  list-style: none;
+}
+.navigation li a {
+  color: black;
+  font-size: 2em;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.navigation li a:hover {
+  color: #f09c23;
+}
+
+.content {
+  position: relative;
+  max-width: 700px;
+}
+
+.content .texting {
+  max-width: 600px;
+  width: 100%;
+}
+
+.content p {
+  color: black;
+}
+
+.btn {
+  position: relative;
+  background: #ff3333;
+  background-size: 200%;
+  color: #fff;
+  padding: 10px 18px;
+  display: inline-flex;
+  margin-top: 20px;
+  font-size: 1.1em;
+  font-weight: 400;
+  text-decoration: none;
+  border-radius: 5px;
+  align-items: center;
+  transition: 0.6s;
+}
+
+.btn:hover {
+  background-position: right;
+  background: linear-gradient(to left, #ff3333, #f8b423);
+  box-shadow: 0 4px 15px 0 rgb(45 54 65 / 75%);
+}
+
+.btn ion-ion {
+  font-size: 2em;
+  margin-right: 5px;
+}
+
+.clip {
+  position: absolute;
+  right: 100px;
+  bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.clip .clipBox {
+  position: relative;
+  width: 340px;
+  height: 220px;
+  border: 4px solid #fff;
+  border-radius: 15px;
+  color: #ff3333;
+}
+
+.clip .clipBox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.clip .clipBox :hover {
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 5, 0, 5);
+}
+
+.socialIcon {
+  position: absolute;
+  bottom: 10px;
+  left: 100px;
+  display: flex;
+  align-items:center ;
+  gap: 40px;
+}
+
+.socialIcon li {
+  list-style: none;
+}
+
+.socialIcon li a {
+  font-size: 2em;
+  color: black;
+}
+
+.socialIcon li a:hover {
+  color: #ff3333;
+}
+
+/*for making it responsive8*/
+@media (max-width:1100px)
+{
+  .banner
+  {
+    padding: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .content {
+    margin-top: 150px;
+  }
+
+  .clip {
+    position: relative;
+    right: initial;
+    bottom: initial;
+    margin: 40px 0 ;
+  }
+  .socialIcon {
+    position: relative;
+    bottom: initial;
+    left:initial;
+  }
+  .navigation {
+    padding-right: 40px;
+  }
+}

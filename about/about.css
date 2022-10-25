@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&display=swap');
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+.name{
+    font-family: 'Lora', serif;
+}
+body {
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+section {
+  padding: 0 100px;
+  background-image: url(crew.png);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+    position: relative;
+    max-width: 600px;
+    padding: 50px;
+    background-image: linear-gradient(to right, #fbd72b , #f9484A);
+    border-radius: 30px 30px 0 0;
+    box-shadow: 20px;
+}
+
+.btn {
+    position: absolute;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    margin-top: 2px;
+    background-image: linear-gradient(to right, #A40606, #d98324);
+    border-radius: 5px;
+    width: 25%;
+    height: 6%;
+   
+}
+
+.btn a{
+    color: white;
+    text-decoration: none;
+    padding: 1%;
+}
+.btn:hover{
+    box-shadow: 20px;
+}

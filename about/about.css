@@ -15,7 +15,7 @@ body {
 section {
   padding: 0 100px;
   background-image: url(crew.png);
-  height: 100vh;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;

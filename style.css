@@ -241,3 +241,12 @@ header {
     max-width: 300px;
   }
 }
+
+@media (max-width:1440px){
+  .content {
+    max-width: 500px 
+  }
+  .socialIcon {
+    bottom: 2px;
+  }
+}

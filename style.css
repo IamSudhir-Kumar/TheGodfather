@@ -115,11 +115,6 @@ header {
   max-width: 700px;
 }
 
-.content .texting {
-  max-width: 600px;
-  width: 100%;
-}
-
 .content p {
   color: black;
 }
@@ -241,5 +236,8 @@ header {
   }
   .content {
     max-width: 300px 
+  }
+  .content .textimg {
+    max-width: 300px;
   }
 }
